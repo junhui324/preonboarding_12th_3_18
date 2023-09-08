@@ -8,7 +8,6 @@ import LoadingSpinner from './components/loadingSpinner/LoadingSpinner';
 function App() {
 	return (
 		<>
-			{' '}
 			<Suspense fallback={<LoadingSpinner />}>
 				<Routes>
 					<Route path={ROUTES.MAIN} element={<Main />} />

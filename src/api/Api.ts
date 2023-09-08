@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { getCacheByKey, setCacheByExpireTime } from '../utils/cache';
-import { CACHE_DELETE_TIME } from '../constants/constants';
+import { CACHE_DELETE_TIME, URL } from '../constants/constants';
 
 const instance = axios.create({
-	baseURL: `http://localhost:4000/sick`,
+	baseURL: URL,
 });
 
 export const getClinicalTrial = async (query: string) => {

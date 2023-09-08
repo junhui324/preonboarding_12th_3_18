@@ -1,10 +1,10 @@
-import styles from './Main.module.scss';
 import React, { useEffect, useRef, useState } from 'react';
-import SearchResults from '../../components/SearchResults/SearchResults';
 import useDebounce from '../../hooks/useDebounce';
-import handleInputChange from '../../utils/ChangeInput';
+import handleInputChange from '../../utils/changeInput';
+import SearchResults from '../../components/SearchResults/SearchResults';
 import { getClinicalTrial } from '../../api/Api';
 import { SearchWordType } from '../../types/SearchWord.interface';
+import styles from './Main.module.scss';
 
 export default function MainPage() {
 	const [searchWord, setSearchWord] = useState('');
